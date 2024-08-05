@@ -1,15 +1,15 @@
-const EventEmitter = require('events')
+// const EventEmitter = require('events')
 
 
-class Logger extends EventEmitter{
-    log(message) {
-        // Send a message
-        console.log('message');
+// class Logger extends EventEmitter{
+//     log(message) {
+//         // Send a message
+//         console.log('message');
 
-        // Raise an event
-    this.emit('logging', {data : "hello"});
-    }
+//         // Raise an event
+//     this.emit('logging', {data : "hello"});
+//     }
 
-}
+// }
 
-module.exports = Logger
+// module.exports = Logger
