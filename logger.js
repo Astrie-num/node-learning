@@ -1,8 +1,15 @@
-var url = "http://localhost:8080";
+const EventEmitter = require('events')
 
-function log(message){
-    // SEND HTTP REQUEST
 
-    console.log(message);
+class Logger extends EventEmitter{
+    log(message) {
+        // Send a message
+        console.log('message');
+
+        // Raise an event
+    this.emit('logging', {data : "hello"});
+    }
+
 }
-module.exports = log;
+
+module.exports = Logger
