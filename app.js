@@ -1,5 +1,13 @@
-function sayHi(name) {
-    console.log("Hi "+ name);
-}
+// function sayHi(name) {
+//     console.log("Hi "+ name);
+// }
 
-sayHi(window)
+// sayHi(window)
+
+
+
+// modules
+
+const log = require('./logger');
+
+log("hello");
