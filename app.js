@@ -36,7 +36,7 @@
 
 
 // fs module
-const fs = require('fs');
+// const fs = require('fs');
 
 // synchronous method
 // const files = fs.readdirSync('./');
@@ -44,23 +44,40 @@ const fs = require('fs');
 
 
 // asynchronous method
-fs.readdir('./',(error, files) => {
-    if(error){
-        console.log(error);
-    }
-    else{
-        console.log(files);
-    }
-});
+// fs.readdir('./',(error, files) => {
+//     if(error){
+//         console.log(error);
+//     }
+//     else{
+//         console.log(files);
+//     }
+// });
 
 
 // traditional way
 
-fs.readdir('./',function(error, files){
-    if(error){
-        console.log(error);
-    }
-    else{
-        console.log(files);
-    }
-});
+// fs.readdir('./',function(error, files){
+//     if(error){
+//         console.log(error);
+//     }
+//     else{
+//         console.log(files);
+//     }
+// });
+
+
+
+
+// events module
+
+
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
+
+// Adding a listener
+emitter.on("messageLogged", function() {
+    console.log("Listener called")
+})
+
+// Raise an event
+emitter.emit("messageLogged")
