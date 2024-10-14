@@ -1,1 +1,1 @@
-This is the data : This is the first text file, this is the second text file
+This is the result: This is the first text filethis is the second text fileThis is the result This is the first text file,this is the second text fileThis is the result This is the first text file,this is the second text file
